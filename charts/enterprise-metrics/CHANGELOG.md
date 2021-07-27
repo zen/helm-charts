@@ -12,6 +12,10 @@ Entries should include a reference to the Pull Request that introduced the chang
 
 ## Unreleased
 
+## 1.4.4
+
+* [FEATURE] Run an instance of the GEM overrides-exporter by default. #590
+
 ## 1.4.3
 
 * [ENHANCEMENT] Added values files for installations that require setting resource limits. #583
