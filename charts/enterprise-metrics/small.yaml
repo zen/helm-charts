@@ -83,16 +83,6 @@ ingester:
       cpu: 4
       memory: 15Gi
 
-overrides_exporter:
-  replicas: 1
-  resources:
-    limits:
-      cpu: 1
-      memory: 256Mi
-    requests:
-      cpu: 100m
-      memory: 128Mi
-
 memcached:
   enabled: true
   replicaCount: 2
@@ -106,6 +96,15 @@ memcached-metadata:
 
 minio:
   enabled: false
+
+overrides_exporter:
+  replicas: 1
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
 
 querier:
   replicas: 2
